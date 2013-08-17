@@ -13,7 +13,7 @@ Some of the cool ones:
  - If you include a header, its library will automatically be linked when possible
  - If you include a library, all necessary headers will be included, and the library will be automatically linked when possible
  - Use of pointers (Referencing and Dereferencing) is automatic when possible, although you may still manually specify
- - Operator overloading is allowed with Arithmetic and Binary operations; Prioritization is as follows: `Bitwise (not, and, or, shift, etc.) > Arithmetic (BEDMAS, modulo (equal to mul/div), etc.) > Comparison (==, !=, >, <=, etc.) > Logical (not, and, or, xor, etc.)`
+ - Operator overloading is allowed with Arithmetic and Binary operations; Prioritization is as follows: `Bitwise (not, and, or, shift, etc.)` > `Arithmetic (BEDMAS, modulo (equal to mul/div), etc.)` > `Comparison (==, !=, >, <=, etc.)` > `Logical (not, and, or, xor, etc.)`
  - Extended logical and bitwise operators; new operators: bitwise (~&, ~|, ~^) and logical (!&&, !||, ^^, !^^)
  
 
@@ -48,4 +48,18 @@ i.e.: is on schedule to be implemented ASAP
 |libc/stdlib|`buffer = (type*) realloc(buffer, vars * sizeof(type));`|`relocate buffer vars type`|
 |libc/stdlib|`free(buffer);`|`delocate buffer`|
 |libc/stdlib|`exit(status);`|`exit status`|
-|Not Applicable|`#include <syslibrary>`|`
+|libc/stdlib|`srand(time(NULL));`|`srand time(NULL)`|
+|libc/stdlib|`var = rand();`|`random var`
+|libc/stdlib|`var = rand() % 5`|`random` [newline] `buffer = result % 5`
+|NA|`#include <sysheader.h>`|`header sysheader.h`|
+|NA|`-lsyslib`|`lib syslib`|
+|NA|`type function(type arg1, type arg2) { code; code; code; return var; }`|`function arg1 type:arg2 { code` [newline] `code` [newline] `code` [newline] `return var }`
+
+Example Code
+============
+
+```
+lib libc
+
+main
+```
