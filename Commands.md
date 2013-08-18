@@ -54,6 +54,7 @@ i.e.: is on schedule to be implemented ASAP
 |NA|`#include <sysheader.h>`|`header sysheader.h`|
 |NA|`-lsyslib`|`lib syslib`|
 |NA|`type function(type arg1, type arg2) { code; code; code; return var; }`|`function arg1 type:arg2 { code` [newline] `code` [newline] `code` [newline] `return var }`
+|NA|`type function(arg) {…}`|`type:function arg`
 
 Example Code
 ============
